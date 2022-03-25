@@ -287,3 +287,5 @@ class SpecAnWidget(AcquisitionModuleWidget):
 
             # phase still needs to be implemented
         self.update_running_buttons()
+
+

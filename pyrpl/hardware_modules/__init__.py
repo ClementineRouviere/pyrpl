@@ -25,6 +25,7 @@ from .dsp import DspModule, DSP_INPUTS, all_inputs, all_output_directs, \
 from .filter import FilterModule
 from .hk import HK
 from .scope import Scope
+from .scope import Histogram
 from .asg import Asg0, Asg1
 from .pid import Pid
 from .sampler import Sampler

@@ -51,7 +51,7 @@ starting from the end of the list) is returned by the module manager:
 import logging
 logger = logging.getLogger(name=__name__)
 from ..widgets.module_widgets import ModuleManagerWidget, AsgManagerWidget, PidManagerWidget, IqManagerWidget, \
-    ScopeManagerWidget, IirManagerWidget, PwmManagerWidget
+    ScopeManagerWidget, IirManagerWidget, PwmManagerWidget, HistogramManagerWidget
 from ..modules import Module
 
 
@@ -170,7 +170,12 @@ class Scopes(ModuleManager):
     """
     _widget_class = ScopeManagerWidget
 
-
+class Histograms(ModuleManager):
+    """
+    Only one scope, but it should be protected by the slave/owner mechanism.
+    """
+    _widget_class = HistogramManagerWidget
+    
 class Iirs(ModuleManager):
     """
     Only one iir, but it should be protected by the slave/owner mechanism.

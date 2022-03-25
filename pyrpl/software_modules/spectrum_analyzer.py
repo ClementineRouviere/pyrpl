@@ -107,12 +107,15 @@ logger = logging.getLogger(name=__name__)
 from ..module_attributes import *
 from ..hardware_modules import Scope
 from ..hardware_modules.dsp import all_inputs, InputSelectProperty
+from ..modules import HardwareModule
 from ..acquisition_module import AcquisitionModule
 from ..widgets.module_widgets import SpecAnWidget
+
 
 import sys
 import scipy.signal as sig
 import scipy.fft
+import numpy as np
 
 # Some initial remarks about spectrum estimation:
 # Main source: Oppenheim + Schaefer, Digital Signal Processing, 1975
@@ -722,3 +725,5 @@ class SpectrumAnalyzer(AcquisitionModule):
                                             (sum(filter_window) ** 2)
 
         return self._enb_cached[self.window]
+    
+

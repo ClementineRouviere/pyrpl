@@ -14,10 +14,11 @@ from .pwm_widget import PwmWidget
 from .lockbox_widget import LockboxWidget, OutputSignalWidget, InputsWidget, \
                             LockboxInputWidget, LockboxSequenceWidget, LockboxStageWidget, StageOutputWidget
 from .module_manager_widget import ModuleManagerWidget, IqManagerWidget, PidManagerWidget, ScopeManagerWidget, \
-                                    IirManagerWidget, AsgManagerWidget, PwmManagerWidget
+                                    IirManagerWidget, AsgManagerWidget, PwmManagerWidget, HistogramManagerWidget
 from .na_widget import NaWidget
 from .pid_widget import PidWidget
 from .scope_widget import ScopeWidget
+from .scope_widget import HistWidget
 from .spec_an_widget import SpecAnWidget
 from .pyrpl_config_widget import PyrplConfigWidget
 from .curve_viewer_widget import CurveViewerWidget

@@ -55,6 +55,9 @@ class AsgManagerWidget(ModuleManagerWidget):
 class ScopeManagerWidget(ModuleManagerWidget):
     add_stretch = False # Scope should expand maximally
 
+class HistogramManagerWidget(ModuleManagerWidget):
+    add_stretch = False # Scope should expand maximally
+
 
 class IirManagerWidget(ModuleManagerWidget):
     pass
